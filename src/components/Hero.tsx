@@ -27,17 +27,21 @@ const Hero = () => {
           <div className="flex justify-center mb-8">
             <div className="relative">
               <div className="absolute inset-0 rounded-full border-2 border-primary animate-glow-pulse blur-sm"></div>
-              <img
-                src={profilePhoto}
-                alt="Foto Profissional"
-                className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary/30 relative z-10"
-              />
+              <img src="src/imagens/f-perfil.jpg.jpeg" alt="foto-perfil" 
+               className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary/30 relative z-10"/>
+               
+               
+            <img/>
             </div>
           </div>
 
           {/* Headline */}
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground animate-flicker">
+              <span className="text-glow">Lucas Dos santos Silva</span>
+              <br />
+              <br />
+              <br />
               <span className="text-glow">Desenvolvedor Fullstack</span>
               <br />
               <span className="text-primary">Júnior JavaScript</span>
