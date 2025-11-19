@@ -29,7 +29,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/lucas-santos-silva-521aba297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_appnkedin.com",
       color: "text-accent"
     },
     {
@@ -41,13 +41,13 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:seu.email@exemplo.com",
+      href: "mailto:lucastumblr1997@gmail.com",
       color: "text-accent"
     },
     {
       icon: Phone,
       label: "WhatsApp",
-      href: "https://wa.me/5511999999999",
+      href: "https://wa.me/5511998222517",
       color: "text-primary"
     }
   ];
@@ -65,7 +65,7 @@ const Contact = () => {
             </h2>
             <div className="h-1 w-20 bg-primary mx-auto"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Vamos construir algo incrível juntos. Entre em contato!
+              Pronto para aprender e construir algo incrível juntos. Entre em contato!
             </p>
           </div>
 
@@ -169,7 +169,7 @@ const Contact = () => {
                     status: <span className="text-primary">"Disponível para oportunidades"</span>,
                   </p>
                   <p className="text-muted-foreground pl-4">
-                    location: <span className="text-primary">"São Paulo, Brasil"</span>,
+                    location: <span className="text-primary">"Perus, São Paulo, Brasil"</span>,
                   </p>
                   <p className="text-muted-foreground pl-4">
                     workMode: <span className="text-primary">"Remoto | Híbrido | Presencial"</span>

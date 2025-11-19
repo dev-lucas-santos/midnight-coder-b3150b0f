@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <p className="text-muted-foreground text-sm font-mono">
-              <span className="text-primary">&copy;</span> {currentYear} - Desenvolvido com{" "}
+              <span className="text-primary">&copy;</span> {currentYear} -DEV-lucas-Santos Desenvolvido com{" "}
               <span className="text-accent">❤</span> e <span className="text-primary">JavaScript</span>
             </p>
 

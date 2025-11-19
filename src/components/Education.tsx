@@ -6,40 +6,40 @@ const Education = () => {
     {
       type: "Graduação",
       course: "Análise e Desenvolvimento de Sistemas",
-      institution: "Universidade Tecnológica Federal",
-      period: "2022 - 2024",
-      status: "Concluído"
+      institution: "DEV-Quest (DEV em Dobro)",
+      period: "2025 - 2026",
+      status: "Cursando"
     },
     {
       type: "Bootcamp",
-      course: "Bootcamp Fullstack JavaScript",
-      institution: "Rocketseat / XP Educação",
-      period: "2023",
+      course: "Em Preparação para o Mercado de Trabalho",
+      institution: "#",
+      period: "2025",
       status: "Concluído"
     }
   ];
 
   const certifications = [
     {
-      title: "JavaScript Algorithms and Data Structures",
-      issuer: "freeCodeCamp",
-      year: "2023"
+      title: "JavaScript Algorithms ",
+      issuer: "Dev Quest",
+      year: "2025"
     },
     {
-      title: "Node.js - The Complete Guide",
-      issuer: "Udemy",
-      year: "2023"
+      title: "agentes de IA - Ferramentas de Automação",
+      issuer: "Dev Quest",
+      year: "2025"
     },
-    {
-      title: "React - The Complete Guide",
-      issuer: "Udemy",
-      year: "2024"
-    },
-    {
-      title: "MongoDB for Developers",
-      issuer: "MongoDB University",
-      year: "2023"
-    }
+    // {
+    //   title: "React - The Complete Guide",
+    //   issuer: "Udemy",
+    //   year: "2024"
+    // },
+    // {
+    //   title: "MongoDB for Developers",
+    //   issuer: "MongoDB University",
+    //   year: "2023"
+    // }
   ];
 
   return (

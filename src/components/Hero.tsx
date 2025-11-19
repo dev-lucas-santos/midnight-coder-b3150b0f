@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FileDown, Briefcase } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
+import perfilFoto from "@/assets/f-perfil.jpg"; // Adicione esta linha
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -27,10 +28,8 @@ const Hero = () => {
           <div className="flex justify-center mb-8">
             <div className="relative">
               <div className="absolute inset-0 rounded-full border-2 border-primary animate-glow-pulse blur-sm"></div>
-              <img src="src/imagens/f-perfil.jpg.jpeg" alt="foto-perfil" 
+              <img src={perfilFoto} alt="foto-perfil" 
                className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-primary/30 relative z-10"/>
-               
-            <img/>
             </div>
           </div>
 

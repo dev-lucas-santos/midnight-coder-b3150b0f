@@ -3,9 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const About = () => {
   const hardSkills = {
-    frontend: ["JavaScript", "TypeScript", "React", "Vue", "HTML5", "CSS3", "Tailwind CSS"],
-    backend: ["Node.js", "Express.js"],
-    database: ["PostgreSQL", "MySQL", "MongoDB"],
+    frontend: ["JavaScript", "TypeScript", "React", "HTML5", "CSS3", "Tailwind CSS"],
+    backend: [""],
+    database: [""],
     tools: ["Git", "GitHub", "VS Code"]
   };
 
