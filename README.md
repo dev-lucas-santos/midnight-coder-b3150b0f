@@ -7,7 +7,7 @@ meu primeiro portifolio , criado com auxilio de agentes de IA
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/18b67af7-9e09-48ba-9fab-1b0d68f4429a
+**URL**: [https://lovable.dev/projects/18b67af7-9e09-48ba-9fab-1b0d68f4429a](http://localhost:8080/)
 
 ## How can I edit this code?
 
