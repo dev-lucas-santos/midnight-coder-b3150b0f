@@ -1,5 +1,10 @@
 # Welcome to me project feat Lovable 
 
+## objetivo 
+
+meu primeiro portifolio , criado com auxilio de agentes de IA 
+(Lovable), apresento um pouco do meu trabalho e estudos , com projetos reais com a intenção de adentrar ao mercado de trabalho, visando sempre o vibe-code e a utilização da tecnologia para melhorar nossas vidas e cotidiano.  
+
 ## Project info
 
 **URL**: https://lovable.dev/projects/18b67af7-9e09-48ba-9fab-1b0d68f4429a
