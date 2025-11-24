@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: "Gerenciador De Produtos Fullstack",
       description: "Plataforma completa de gerenciador de produtos com painel administrativo, organização por data, quantidade e produtos  e integração de salvamento.",
-      impact: "Sistema completo com autenticação, gestão de produtos e processamento de saida em tempo real.",
+      impact: "Sistema completo com autenticação, gestão de produtos e processamento de entrada e saida em tempo real.",
       tech: ["HTML", "JavaScript", "CSS", "Ferramentas de IA"],
       aiFeature: "Testes automatizados gerados com GitHub Copilot",
       liveDemo: "https://dev-lucas-santos.github.io/tabela-produtos/",
@@ -17,9 +17,9 @@ const Projects = () => {
     {
       title: "E-Comerce Responsivo Automatizado",
       description: "E-comerce de cartas online , mais facilmentre adaptavel pra um projeto real , gerenciador de cartas e pedidos , atendimento via whatsapp.",
-      impact: "E-Comerce intuitivo e chamativo de cartas online , de facil utilização e adptavel para um projeto real , para dendas online através com visualizações intuitivas.",
+      impact: "E-Comerce intuitivo e chamativo de cartas online , de facil utilização e adptavel para um projeto real , para vendas online através do whatsapp e com visualizações intuitivas. Prentendo adicionar um chatbot futuramente.",
       tech: ["JavaScript", "agentes de IA"],
-      aiFeature: "Otimização de queries com auxílio do ChatGPT",
+      aiFeature: "Otimização de queries e criação de imagens com auxílio do ChatGPT",
       liveDemo: "https://dev-lucas-santos.github.io/Projeto-Cards-online/",
       github: "https://github.com/dev-lucas-santos/Projeto-Cards-online.git"
     },
