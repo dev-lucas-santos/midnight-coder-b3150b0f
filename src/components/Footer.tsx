@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-accent">❤</span> e <span className="text-primary">JavaScript</span>
             </p>
 
-            {/* Social Links */}
+            {/* redes sociais   */}
             <div className="flex items-center gap-4">
               <a
                 href="https://github.com"

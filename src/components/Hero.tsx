@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { FileDown, Briefcase } from "lucide-react";
+import React, { useEffect, useRef } from "react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 import heroBg from "@/assets/hero-bg.jpg";
 
@@ -8,8 +9,40 @@ const Hero = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const terminalRef = useRef<HTMLDivElement | null>(null);
+  const indicatorRef = useRef<HTMLDivElement | null>(null);
+
+  // posiciona o indicador 10px abaixo do terminal text
+  useEffect(() => {
+    const updatePosition = () => {
+      const sectionEl = sectionRef.current;
+      const termEl = terminalRef.current;
+      const indEl = indicatorRef.current;
+      if (!sectionEl || !termEl || !indEl) return;
+
+      const sectionRect = sectionEl.getBoundingClientRect();
+      const termRect = termEl.getBoundingClientRect();
+
+      // calcula top relativo ao elemento section
+      const top = termRect.bottom - sectionRect.top + 10; // 10px abaixo do texto
+      indEl.style.top = `${top}px`;
+      // remove bottom positioning para evitar conflito
+      indEl.style.bottom = "auto";
+    };
+
+    updatePosition();
+    window.addEventListener('resize', updatePosition);
+    window.addEventListener('scroll', updatePosition, { passive: true });
+    return () => {
+      window.removeEventListener('resize', updatePosition);
+      window.removeEventListener('scroll', updatePosition);
+    };
+  }, []);
+
   return (
     <section 
+      ref={sectionRef}
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
       style={{
         backgroundImage: `url(${heroBg})`,
@@ -49,7 +82,7 @@ const Hero = () => {
           {/* Pitch */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Especializado no ecossistema <span className="text-primary font-semibold">JavaScript</span> (Node.js, React/Vue) 
-            e utilizando ferramentas de <span className="text-accent font-semibold">IA</span> (Copilot, ChatGPT, Gemini) 
+            e utilizando ferramentas de <span className="text-accent font-semibold">IA</span> (Copilot, ChatGPT, Gemini, Lovable
             para otimizar o ciclo de desenvolvimento e qualidade de código.
           </p>
 
@@ -78,7 +111,7 @@ const Hero = () => {
           </div>
 
           {/* Terminal-style indicator */}
-          <div className="pt-8 opacity-70">
+          <div className="pt-8 opacity-70" ref={terminalRef}>
             <p className="text-primary font-mono text-sm">
               <span className="animate-glow-pulse">&gt;_</span> Ready to build amazing projects
             </p>
@@ -87,7 +120,7 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+      <div ref={indicatorRef} className="absolute left-1/2 -translate-x-1/2 animate-bounce" style={{ bottom: 'auto' }}>
         <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
           <div className="w-1 h-2 bg-primary rounded-full"></div>
         </div>

@@ -42,7 +42,7 @@ const About = () => {
                 Desenvolvedor apaixonado por tecnologia e inovação, com foco em criar soluções eficientes 
                 e escaláveis. Utilizando o poder da Inteligência Artificial para acelerar o desenvolvimento, 
                 mantenho a qualidade do código e implemento as melhores práticas do mercado. 
-                Sempre em busca de novos desafios e oportunidades de crescimento profissional.
+                Sempre em busca de novos desafios e oportunidades de aprendizado e crescimento profissional.
               </p>
             </CardContent>
           </Card>
